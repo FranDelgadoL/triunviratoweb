@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Triunvirato</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+<body>
+
+<div class="background-image">
+  <!-- Aquí está la imagen de fondo -->
+</div>
+
+<header>
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <div class="menu-bar"></div>
+    <div class="menu-bar"></div>
+    <div class="menu-bar"></div>
+  </div>
+</header>
+
+<nav id="menu">
+  <ul>
+    <li><a href="#">Biografía y Contacto</a></li>
+    <li><a href="#">Músicas</a></li>
+    <li><a href="#">Conciertos</a></li>
+
+  </ul>
+</nav>
+
+<div class="content">
+
+  <div class="redes-sociales">
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <div class="gallery">
+    <img src="mercedia3.jpeg" alt="triunviratoterraza">
+    <img src="mercedia5.jpeg" alt="triunviratoterraza">
+  </div>
+
+  <div class="music-links">
+    <a href="#" class="music-icon"><i class="fab fa-spotify"></i></a>
+    <a href="#" class="music-icon"><i class="fab fa-deezer"></i></a>
+    <a href="#" class="music-icon"><i class="fab fa-youtube"></i></a>
+  </div>
+  
+</div>
+
+<footer>
+  <div class="footer-content">
+    <div class="biografia">
+      <h3>Biografía</h3>
+        Triunvirato es una banda de música formada en la ciudad de Asunción, Paraguay, en el año 2024.<br>
+        Con un formato acústico y minimalista, se destaca por sus melodías suaves y letras poéticas. Su música fusiona elementos del folk, el indie y el pop, creando un estilo único y cautivador.<br>
+        Integrantes:<br>
+        Rodrigo Pampliega: voz y guitarra, compositor principal<br>
+        Rubén Arce: percusión, voces<br>
+        Fran Delgado: bajo
+      </p>
+    </div>
+    <!--<div class="contacto">
+      <h3>Contacto</h3>
+      <p>Información de contacto...</p>
+    </div>-->
+  </div>
+</footer>
+
+
+
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("menu");
+    menu.classList.toggle("active");
+  }
+
+  // Código para cerrar el menú al hacer clic fuera de él
+  window.onclick = function(event) {
+    if (!event.target.matches('.menu-toggle') && !event.target.closest('#menu')) {
+      var menu = document.getElementById("menu");
+      if (menu.classList.contains('active')) {
+        menu.classList.remove('active');
+      }
+    }
+  }
+</script>
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+

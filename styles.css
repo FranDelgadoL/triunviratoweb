@@ -1,0 +1,190 @@
+.background-image {
+  background-image: url('eltriunv4.png');
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: -1; /* Asegura que la imagen esté detrás del contenido */
+  background-position: center 30%; /* Centra la imagen verticalmente al 30% de la altura */
+}
+
+@media (max-width: 768px) {
+  .background-image {
+    background-size: contain; /* Cambia a cover en dispositivos más pequeños */
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('fondoeltri1.png');
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Agregué un padding de 20px en lugar de 0px */
+  position: relative;
+}
+
+.menu-toggle {
+  display: flex; /* Usar flexbox para centrar */
+  flex-direction: column; /* Alinear elementos en vertical */
+  justify-content: center; /* Centrar elementos verticalmente */
+  align-items: center; /* Centrar elementos horizontalmente */
+  cursor: pointer;
+  position: relative; /* Posicionar dentro del header */
+  /* Eliminar propiedades de posición absolutas */
+  top: auto;
+  right: auto;
+  /* Centrar horizontalmente con margin: 0 auto; */
+  margin: 0 auto;
+}
+
+.menu-bar {
+  width: 40px;
+  height: 5px;
+  background-color: silver;
+  margin: 4px 0;
+  border-radius: 35%;
+}
+
+#menu {
+  display: none; /* Oculta el menú al inicio */
+  font-family: 'Lato', sans-serif;
+}
+
+#menu.active {
+  display: block; /* Muestra el menú cuando está activo */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+nav ul li {
+  margin-top: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a:hover {
+  text-decoration: underline; /* Underline on hover */
+  background-color: #333;
+}
+
+.content {
+  padding-top: 500px; /* Ajusta el espacio para la barra de navegación */
+  margin-bottom: 50px; /* Agregamos margen inferior */
+}
+
+.redes-sociales {
+  text-align: center;
+  margin-bottom: 20px; /* Agrega un espacio entre los íconos y la galería */
+}
+
+.redes-sociales a {
+  color: #b8b6b6;
+  font-size: 36px; /* Cambia el tamaño de los íconos */
+  margin: 0 40px;
+}
+
+.redes-sociales a:hover {
+  color: #054678; 
+}
+
+.gallery {
+  background-image: url('5.png'); /* Ruta a tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 300px; /* Fija el ancho de las imágenes */
+  height: 300px; /* Fija la altura de las imágenes */
+  object-fit: cover; /* Escala las imágenes para que llenen el contenedor */
+  margin: 10px; /* Agrega un margen entre las imágenes */
+  border-radius: 10px; /* Agrega bordes redondeados */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 2); /* Agrega una sombra sutil */
+  transition: box-shadow 0.3s ease; /* Agrega transición a la sombra */
+}
+
+
+/* Estilos para el footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-Regular.ttf') format('truetype'); /* Ruta al archivo .ttf */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.biografia,
+.contacto {
+  flex: 1;
+}
+
+.biografia {
+  font-family: 'Lato', sans-serif; /* Aplica Lato a la biografía */
+}
+
+
+/* Estilos para los títulos */
+.footer-content h3 {
+  margin-bottom: 10px;
+}
+
+/* Estilos para los párrafos */
+.footer-content p {
+  margin-bottom: 20px;
+}
+
+.music-links {
+  text-align: center;
+  margin-top: 20px; /* Agrega un espacio entre la galería y los íconos de música */
+}
+
+.music-links a {
+  color: #eeebeb;
+  font-size: 36px; /* Tamaño de los íconos de música */
+  margin: 0 40px;
+}
+
+.music-links a:hover {
+  color: #054678;
+}
+  

@@ -1,2 +1,2 @@
-# triunviratoweb
-Website for a music band Triunvirato
+https://frandelgadol.github.io/triunviratoweb
+https://frandelgadol.github.io/triunviratoweb/
